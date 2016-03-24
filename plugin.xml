@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-cpu-architecture" version="1.0.1">
+    <name>cordova plugin cpu architecture</name>
+    <description>Detect cordova android cpu architecture: armv7 or x86</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,android,architecture,cpu architecture,arm,armv7,x86</keywords>
+
+    <!-- dependencies -->
+    <dependency id="cordova-plugin-appversion" />
+
+    <!-- info -->
+    <info>
+    </info>
+
+    <platform name="android">
+        <js-module src="www/jsv2/AppArch.js">
+            <clobbers target="AppArch" />
+        </js-module>
+    </platform>
+</plugin>
